@@ -1,1 +1,8 @@
+The Main Task was to create a price list for a fictitious restaurant chain. The price list should look appealing and stylish and use different CSS concepts.  
+
+Requirements:   
+•	Use an HTML table to structure the price list.  
+•	Use pseudo classes such as `:hover` and pseudo elements such as `::before` or `::after` to add interactive effects or additional design elements.   
+•	Experiment with transform statements such as `rotate`, `scale` or `translate` to animate or style parts of your price list in creative ways. For example, you could slightly rotate a text or enlarge an image when the user hovers over it.  
+•	Create an order form.
 
