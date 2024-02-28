@@ -1,1 +1,8 @@
+The Main Task was to create a responsive magazine website (single page) that contains articles on various topics. The website should be visually appealing and user-friendly and use different CSS concepts. 
+
+Requirements:   
+•	Use semantic HTML5 tags such as `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, and `<footer>` for the structure of your website. Note the semantic meaning of the tags and their correct use.  
+•	Use CSS Grid Layout to organize the main content of your page. You can create grids for article overviews and other sections.  
+•	Implement media queries to ensure that your website works well on different screen sizes and devices. Make sure the website is responsive on both desktops and mobile devices.   
+•	Use background images and color gradients to give your website an appealing visual design. Each article could have a unique background.
 
