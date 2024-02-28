@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tapas y Mas</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts link-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav id="page_start" class="flex">
+    <ul class="flex navStyling">
+        <li>
+            <a href="#menu">Zur Speisekarte</a>
+        </li>
+        <li>
+            <a href="#orderform">Zur Bestellung</a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <h1 class="translate">Tapas y Mas</h1>
+    <!--Speisekarte Section-->
+    <article id="menu" class="table">
+        <table>
+            <thead>
+            <tr>
+                <th>Bild</th>
+                <th>Gericht</th>
+                <th>Beschreibung</th>
+                <th>Preis</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Bild" rowspan="2"><img src="images/spanish-tapas.jpg" alt="Picture of spanish tapas">
+                </td>
+                <td data-label="Gericht">Cecina de Leon</td>
+                <td data-label="Beschreibung">Luftgetrocknete Rinderschinken</td>
+                <td data-label="Preis">€ 6,90</td>
+            </tr>
+            <tr>
+                <td data-label="Gericht">Allioli y aceitunas</td>
+                <td data-label="Beschreibung">Oliven und Knoblauch-Mayonnaise mit 3 Stück Holzofenbrot</td>
+                <td data-label="Preis">€ 4,50</td>
+            </tr>
+            <tr>
+                <td data-label="Bild" rowspan="2"><img src="images/rosemary-steak.jpg"
+                                                       alt="Picture of a rosemary steak"></td>
+                <td data-label="Gericht">Chuletas de cordero a la plancha con patatas</td>
+                <td data-label="Beschreibung">Lammkotelett, zart rosa gebraten mit Kräuterkartoffel</td>
+                <td data-label="Preis">€ 29,90</td>
+            </tr>
+            <tr>
+                <td data-label="Gericht">Pluma de Cerdo Ibérico</td>
+                <td data-label="Beschreibung">Frisches Iberico Schwein, zartrosa gebraten mit Kartoffel, Zwiebel und
+                    Knoblauch
+                </td>
+                <td data-label="Preis">€ 25,90</td>
+            </tr>
+            <tr>
+                <td data-label="Bild" rowspan="2"><img src="images/lobsters-on-a-plate.jpg"
+                                                       alt="Picture of a lobster on a plate"></td>
+                <td data-label="Gericht">Gambas en salsa de Jerez con arroz blanco</td>
+                <td data-label="Beschreibung">Garnelen ohne Schale in Jerez mit Reis</td>
+                <td data-label="Preis">€ 19,90</td>
+            </tr>
+            <tr>
+                <td data-label="Gericht">Calamares a la plancha</td>
+                <td data-label="Beschreibung">Tintenfische vom Grill</td>
+                <td data-label="Preis">€ 17,90</td>
+            </tr>
+            <tr>
+                <td data-label="Bild" rowspan="2"><img src="images/dessert-on-a-plate.jpg"
+                                                       alt="Picture of dessert on a plate"></td>
+                <td data-label="Gericht">Crema Catalana</td>
+                <td data-label="Beschreibung">Die bevorzugte Süßspeise der Spanier</td>
+                <td data-label="Preis">€ 6,40</td>
+            </tr>
+            <tr>
+                <td data-label="Gericht">Mousse de chocolate helada</td>
+                <td data-label="Beschreibung">Hausgemachtes Schokomousse-Eis</td>
+                <td data-label="Preis">€ 5,90</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+    <!--Bestellform Section-->
+    <article id="orderform">
+        <div>
+            <h2>Ihre Bestellung</h2>
+            <form class="mWidth">
+                <fieldset>
+                    <section>
+                        <h3>Tapas:</h3>
+                        <input id="tapas1" type="checkbox" name="tapas" value="Cecina de Leon">
+                        <label for="tapas1">Cecina de Leon</label>
+                        <input id="tapas2" type="checkbox" name="tapas" value="Allioli y aceitunas">
+                        <label for="tapas2">Allioli y aceitunas</label>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>Fleischgerichte:</h3>
+                        <input id="meat1" type="checkbox" name="meat" value="Chuletas de cordero">
+                        <label for="meat1">Chuletas de cordero con patatas</label>
+                        <input id="meat2" type="checkbox" name="meat" value="Pluma de Cerdo Ibérico">
+                        <label for="meat2">Pluma de Cerdo Ibérico</label>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>Alles aus dem Meer:</h3>
+                        <input id="seafood1" type="checkbox" name="seafood" value="Gambas en salsa de Jerez">
+                        <label for="seafood1">Gambas en salsa de Jerez con arroz blanco</label>
+                        <input id="seafood2" type="checkbox" name="seafood" value="Calamares a la plancha">
+                        <label for="seafood2">Calamares a la plancha</label>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>Nachtisch:</h3>
+                        <input id="dessert1" type="checkbox" name="dessert" value="Crema Catalana">
+                        <label for="dessert1">Crema Catalana</label>
+                        <input id="dessert2" type="checkbox" name="dessert" value="Mousse de chocolate">
+                        <label for="dessert2">Mousse de chocolate helada</label>
+                    </section>
+                    <hr>
+                    <section class="last_form_section">
+                        <label for="comment">Haben Sie sonst Wünsche?</label>
+                        <textarea id="comment" name="guestcomment" rows="5" cols="40"></textarea>
+                    </section>
+                    <section>
+                        <button type="submit">Bestellen</button>
+                    </section>
+                </fieldset>
+            </form>
+        </div>
+    </article>
+</main>
+<footer class="rotate">
+    <a href="#page_start" class="link_to_page_start">
+        &copy 2023 Tapas y Mas
+    </a>
+</footer>
+</body>
+</html>

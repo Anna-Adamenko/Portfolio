@@ -1,0 +1,232 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*Navigation Styling*/
+nav {
+    width: 100%;
+    background-image: url('images/spanish-paella.jpg');
+    min-height: 250px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.navStyling {
+    list-style: none;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.navStyling a {
+    color: #F2EAD0;
+    background-color: #3E2A05;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.navStyling a:hover {
+    background-color: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Ende Navigation Styling*/
+
+
+/*Headings Styling*/
+h1, h2 {
+    text-align: center;
+    margin: 40px;
+    word-spacing: 3px;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Caveat', cursive;
+}
+
+.translate:hover {
+    transform: translate(10%, 10%);
+}
+
+h2 {
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+h3 {
+    letter-spacing: 4px;
+}
+
+/*Ende Headings Styling*/
+
+
+/*Table Styling*/
+img {
+    max-width: 150px;
+    border-radius: 30%;
+    cursor: zoom-in;
+}
+
+img:hover {
+    transform: scale(2);
+}
+
+.table {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 35px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: rgb(81, 63, 31, 0.5);
+    color: white;
+}
+
+td {
+    padding: 25px;
+    text-align: center;
+    color: #353940;
+    letter-spacing: 2px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #eee;
+
+}
+
+/*Ende Table Styling*/
+
+
+/*Form Styling*/
+
+form {
+    text-align: center;
+
+}
+
+.mWidth {
+    max-width: 700px;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+}
+
+hr {
+    width: 20%;
+}
+
+label {
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+input[type=checkbox] {
+    min-height: 15px;
+    min-width: 15px;
+}
+
+input:checked + label {
+    color: #D95A11;
+    font-weight: bold;
+}
+
+
+fieldset {
+    padding: 30px;
+    border: 5px solid rgb(81, 63, 31, 0.5);
+}
+
+.last_form_section {
+    margin-top: 30px;
+}
+
+textarea {
+    padding: 10px;
+    min-width: 90%;
+    margin-top: 20px;
+}
+
+
+button {
+    padding: 12px;
+    min-width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(81, 63, 31, 0.5);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+/*Ende Form Styling*/
+
+
+/*Footer Styling*/
+footer {
+    text-align: center;
+    padding: 1%;
+}
+
+.link_to_page_start {
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.rotate:hover {
+    transform: rotate(180deg);
+}
+
+/*Ende Footer Styling*/
+
+
+@media screen and (max-width: 600px) {
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        background-color: rgb(81, 63, 31, 0.5);
+        width: 30%;
+        margin-right: 5px;
+    }
+
+    .table td {
+        display: flex;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .table thead {
+        display: none;
+        visibility: hidden;
+    }
+}
