@@ -1,1 +1,9 @@
+The Main Task was to create a simple Rock, Paper, Scissors game using JavaScript, where user plays against the computer. 
+
+Requirements:   
+
+•	The game starts when the user chooses an icon for rock, paper or scissors. Simultaneously computer also chooses one of the three icons. 
+•	There are 3 rounds in each game and the number of rounds should be updated and displayed on the screen.   
+•	In the end of the game the user should be able to choose to restart the game. 
+•	Bootstrap and own CSS were used for styling.     
 
