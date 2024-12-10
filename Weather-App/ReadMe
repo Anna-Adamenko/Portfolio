@@ -1,1 +1,14 @@
+The main task was to create a weather app that allows users to retrieve current weather data for any city and/or postal code.
+
+Key Functionalities:
+  • Used the Fetch API to send a request to a Geocoding API (Nominatim) to retrieve geographic coordinates (latitude and longitude).
+  • Sent the retrieved coordinates to a Weather API (Open-Meteo) to fetch weather data, such as temperature and weather conditions. 
+  •	Used classes to store weather and location information 
+
+  • Dynamically displayed the weather data on the webpage, including:
+    •	The name of the chosen location.
+    •	An icon representing the weather condition based on the weather code.
+    •	The current temperature in Celsius.
+    •	A text description of the weather condition.
+
 
