@@ -1,0 +1,216 @@
+// Variables
+$primary-color: #010d3d;
+$secondary-color: #9696ff;
+$tertiary-color: white;
+$body-font: "Geologica", sans-serif;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $body-font;
+}
+
+
+//Navigation Bar Styling
+
+.navStyling {
+  list-style: none;
+  margin-top: 4%;
+  width: 100%;
+  padding: 0;
+
+  a {
+    color: $tertiary-color;
+    text-decoration: none;
+    font-size: clamp(1em, 1vw + .8em, 1.5em);
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+//Navigation Bar Styling End
+
+
+//Introduction Section Styling
+.background_image {
+  background: {
+    image: url("../images/turtle-in-the-ocean.jpg");
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+
+  }
+}
+
+.padding-15 {
+  padding-bottom: 15%;
+}
+
+h1 {
+  font-size: clamp(2em, 8vw, 4em);
+  margin-top: 20%;
+  color: $tertiary-color;
+}
+
+
+p {
+  color: $tertiary-color;
+  font-size: clamp(1em, 1vw + .3em, 1.5em);
+  font-weight: lighter;
+}
+
+.margin-left {
+  margin-left: 10%;
+}
+
+//Introduction Section Styling End
+
+// Grid Gallery Styling
+.blue_background {
+  background-color: $primary-color;
+}
+
+h2 {
+  color: $secondary-color;
+  font-size: clamp(2em, 2vw, 3em);
+  margin-top: 0;
+}
+
+.padding {
+  padding: 2% 7% 10%;
+}
+
+
+// Grid
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  gap: 30px 30px;
+  grid-auto-flow: row;
+}
+
+.grid-item1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid-item2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.grid-item3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.grid-item4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-item5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.grid-item6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+// Grid Gallery Styling End
+
+
+// Video Section Styling
+
+.margin-bottom {
+  margin-bottom: 5%;
+}
+
+.video-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: calc(90% * 9 / 16);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Video Styling End
+
+
+//Footer Styling
+footer {
+  text-align: center;
+  padding: 1%;
+}
+
+//Footer Styling End
+
+
+@media screen and (max-width: 900px) {
+
+  .margin-left {
+    margin: 20% 20%;
+  }
+
+  .container img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .grid-item1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .grid-item2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .grid-item3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .grid-item4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .grid-item5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .grid-item6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+}
+

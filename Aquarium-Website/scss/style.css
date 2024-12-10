@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Geologica", sans-serif;
+}
+
+.navStyling {
+  list-style: none;
+  margin-top: 4%;
+  width: 100%;
+  padding: 0;
+}
+.navStyling a {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(1em, 1vw + 0.8em, 1.5em);
+}
+.navStyling a:hover {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.background_image {
+  background-image: url("../images/turtle-in-the-ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.padding-15 {
+  padding-bottom: 15%;
+}
+
+h1 {
+  font-size: clamp(2em, 8vw, 4em);
+  margin-top: 20%;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: clamp(1em, 1vw + 0.3em, 1.5em);
+  font-weight: lighter;
+}
+
+.margin-left {
+  margin-left: 10%;
+}
+
+.blue_background {
+  background-color: #010d3d;
+}
+
+h2 {
+  color: #9696ff;
+  font-size: clamp(2em, 2vw, 3em);
+  margin-top: 0;
+}
+
+.padding {
+  padding: 2% 7% 10%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  gap: 30px 30px;
+  grid-auto-flow: row;
+}
+
+.grid-item1 {
+  grid-area: 1/1/2/2;
+}
+
+.grid-item2 {
+  grid-area: 1/2/2/3;
+}
+
+.grid-item3 {
+  grid-area: 1/3/2/4;
+}
+
+.grid-item4 {
+  grid-area: 2/1/3/2;
+}
+
+.grid-item5 {
+  grid-area: 2/2/3/3;
+}
+
+.grid-item6 {
+  grid-area: 2/3/3/4;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 5%;
+}
+
+.video-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50.625%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1%;
+}
+
+@media screen and (max-width: 900px) {
+  .margin-left {
+    margin: 20% 20%;
+  }
+  .container img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .grid-item1 {
+    grid-area: 1/1/2/2;
+  }
+  .grid-item2 {
+    grid-area: 2/1/3/2;
+  }
+  .grid-item3 {
+    grid-area: 3/1/4/2;
+  }
+  .grid-item4 {
+    grid-area: 4/1/5/2;
+  }
+  .grid-item5 {
+    grid-area: 5/1/6/2;
+  }
+  .grid-item6 {
+    grid-area: 6/1/7/2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

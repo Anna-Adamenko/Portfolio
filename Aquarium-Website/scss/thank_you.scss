@@ -1,0 +1,75 @@
+// Variables
+$primary-color: #061d7c;
+$secondary-color: #fe6e5e;
+$tertiary-color: white;
+$navbar-background-color: rgba(1, 18, 61, 0.8);
+$body-font: "Geologica", sans-serif;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $body-font;
+  background-color: $primary-color;
+  overflow-x: hidden;
+}
+
+//Navbar Styling
+nav {
+  width: 100%;
+  background-color: $navbar-background-color;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+.navStyling {
+  list-style: none;
+  width: 100%;
+  margin-top: 2%;
+
+  a {
+    color: $tertiary-color;
+    text-decoration: none;
+    font-size: clamp(1em, 1.3vw, 1.5em);
+    letter-spacing: 1px;
+
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  li:nth-child(4) a {
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+//Navbar Styling End
+
+h1 {
+  color: $secondary-color;
+  font-size: clamp(2em, 3vw, 3em);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20%;
+
+}
+
+p {
+  color: $tertiary-color;
+  font-size: clamp(1em, 1vw + .1em, 1.5em);
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 3%;
+}

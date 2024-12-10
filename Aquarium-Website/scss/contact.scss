@@ -1,0 +1,174 @@
+// Variables
+$primary-color: #061d7c;
+$secondary-color: #fe6e5e;
+$tertiary-color: white;
+$navbar-background-color: rgba(1, 18, 61, 0.8);
+$body-font: "Geologica", sans-serif;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $body-font;
+  background-color: $primary-color;
+  overflow-x: hidden;
+}
+
+//Navbar Styling
+nav {
+  width: 100%;
+  background-color: $navbar-background-color;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+.navStyling {
+  list-style: none;
+  width: 100%;
+  margin-top: 2%;
+
+  a {
+    color: $tertiary-color;
+    text-decoration: none;
+    font-size: clamp(1em, 1.3vw, 1.5em);
+    letter-spacing: 1px;
+
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  li:nth-child(4) a {
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+//Navbar Styling End
+
+
+//Introduction Styling
+h1 {
+  color: $secondary-color;
+  font-size: clamp(2em, 3vw, 3em);
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 7%;
+
+}
+
+.intro-text {
+  color: $tertiary-color;
+  font-size: clamp(1em, 1vw + .1em, 1.5em);
+  font-weight: lighter;
+  margin-left: 10%;
+  margin-top: 3%;
+
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.intro-image-style {
+  max-width: 350px;
+  right: 10%;
+  position: absolute;
+
+  &:hover {
+    transform: translate(20%, 20%);
+  }
+}
+
+.position {
+  position: relative;
+  margin-bottom: 15%;
+  margin-top: 10%;
+}
+
+.margin-top {
+  margin-top: 20%;
+}
+
+//Introduction Styling End
+
+
+//Form Styling
+
+fieldset {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: $tertiary-color;
+}
+
+h2 {
+  color: $secondary-color;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+
+.form-group {
+  margin-bottom: 3%;
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn-submit {
+  background-color: $secondary-color;
+  color: rgba(1, 18, 61);
+  padding: 10px 30px;
+  margin-right: 3%;
+  border-radius: 20px;
+}
+
+.btn-reset {
+  color: rgba(1, 18, 61);
+  border: 2px solid $secondary-color;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+//Form Styling End
+
+
+//Footer Styling
+
+.footer-text {
+  color: $tertiary-color;
+  font-size: clamp(1em, 1vw + .1em, 1.5em);
+  margin-top: 5%;
+}
+
+footer {
+  padding: 1%;
+  color: white;
+  text-align: center;
+}
+
+//Footer Styling End
+
+
+@media (max-width: 767px) {
+
+  .intro-image-style {
+    position: relative;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+}

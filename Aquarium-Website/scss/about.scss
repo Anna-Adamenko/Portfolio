@@ -1,0 +1,178 @@
+// Variables
+$primary-color: #061d7c;
+$secondary-color: #00b482;
+$tertiary-color: white;
+$navbar-background-color: rgba(1, 18, 61, 0.8);
+$body-font: "Geologica", sans-serif;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: $body-font;
+  background-color: $primary-color;
+  overflow-x: hidden;
+}
+
+
+//Navbar Styling
+nav {
+  width: 100%;
+  background-color: $navbar-background-color;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+
+.navStyling {
+  list-style: none;
+  width: 100%;
+  margin-top: 2%;
+
+  a {
+    color: $tertiary-color;
+    text-decoration: none;
+    font-size: clamp(1em, 1.3vw, 1.5em);
+    letter-spacing: 1px;
+
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  li:nth-child(3) a {
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+//Navbar Styling End
+
+
+//Introduction Section Styling
+h1 {
+  color: $secondary-color;
+  font-size: clamp(2em, 3vw, 3em);
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 7%;
+
+}
+
+.intro-text {
+  color: $tertiary-color;
+  font-size: clamp(1em, 1vw + .1em, 1.5em);
+  font-weight: lighter;
+  margin-left: 10%;
+  margin-top: 3%;
+
+}
+
+
+.intro-image-style {
+  max-width: 350px;
+  right: 0;
+  position: absolute;
+
+  &:hover {
+    transform: translate(20%, 20%);
+  }
+}
+
+.position {
+  position: relative;
+  margin-bottom: 15%;
+  margin-top: 10%;
+}
+
+//Introduction Section Styling End
+
+
+//Table Styling
+h2 {
+  text-align: center;
+  color: $secondary-color;
+  font-size: clamp(2em, 2vw, 3em);
+  font-weight: bold;
+}
+
+tbody tr td, thead th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.table-padded-rows tbody tr td,
+.table-padded-rows thead th {
+  padding: 30px;
+}
+
+.custom-style-head thead th {
+  color: $tertiary-color;
+  font-size: clamp(1em, 1vw + .3em, 1.5em);
+  background-color: #010d3d;
+}
+
+
+.table td.custom-bg-color {
+  background-color: #eff3ff;
+}
+
+.table-image {
+  max-width: 120px;
+  border-radius: 20%;
+  cursor: zoom-in;
+
+  &:hover {
+    transform: scale(2);
+  }
+}
+
+//Table Styling End
+
+
+//Footer Styling
+
+.footer-img-style {
+  max-width: 200px;
+}
+
+.footer-text {
+  color: white;
+  font-size: clamp(1em, 1vw + .1em, 1.5em);
+  margin-left: 1%;
+  margin-top: 3%;
+
+}
+
+footer {
+  padding: 1%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Footer Styling End
+
+
+@media (max-width: 767px) {
+
+  .intro-image-style {
+    position: relative;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+}
