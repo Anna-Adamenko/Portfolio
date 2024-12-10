@@ -1,1 +1,9 @@
+The main task was to develop a dynamic website consisting of four pages.
+
+Key Functionalities:
+  • Implemented a form to capture user input and display their data dynamically on the webpage.
+  • Leveraged the Fetch API for asynchronous data storage and retrieval.
+  • Utilized PHP for file handling operations, including reading from and appending data to data.txt.
+  • Applied JavaScript for dynamic DOM manipulation, enabling the creation and rendering of interactive cards based on backend data.
+  • Incorporated Bootstrap and SCSS to create a responsive and visually appealing design.
 
